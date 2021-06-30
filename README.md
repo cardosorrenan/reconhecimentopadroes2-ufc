@@ -1,2 +1,2 @@
 # reconhecimentopadroes2-ufc
-Repositório dedicado da disciplina contendo alguns classificadores
+Repositório dedicado da disciplina (PPGEEC) contendo alguns classificadores
