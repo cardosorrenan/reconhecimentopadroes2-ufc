@@ -44,8 +44,9 @@ n1 = size(base_1)(1)
 y = b_0 + b_1 * base_1x
 r2_1 = coeff_det(base_1y, y)
 xset('window', 1);
-scatter(base_1x, base_1y, style=color("red"))
-title('r2:  ' + string(r2_1))
+xset("thickness", 2)
+scatter(base_1x, base_1y, "markerEdgeColor",[1 1 1], "markerFaceColor",[0 0.4 1], "linewidth",0.25)
+title('r2:  ' + string(r2_1), 'fontsize', 4)
 plot2d(base_1x, y, style=color("red"))
 
 // Sector 2
@@ -56,8 +57,9 @@ n2 = size(base_2)(1)
 y = b_0 + b_1 * base_2x
 r2_2 = coeff_det(base_2y, y)
 xset('window', 2);
-scatter(base_2x, base_2y, style=color("red"))
-title('r2:  ' + string(r2_2))
+xset("thickness", 2)
+scatter(base_2x, base_2y, "markerEdgeColor",[1 1 1], "markerFaceColor",[0 0 1], "linewidth",0.25)
+title('r2:  ' + string(r2_2), 'fontsize', 4)
 plot2d(base_2x, y, style=color("red"))
 
 // Sector 3
@@ -68,6 +70,7 @@ n3 = size(base_3)(1)
 y = b_0 + b_1 * base_3x
 r2_3 = coeff_det(base_3y, y)
 xset('window', 3);
-scatter(base_3x, base_3y, style=color("red"))
-title('r2:  ' + string(r2_3))
+xset("thickness", 2)
+scatter(base_3x, base_3y, "markerEdgeColor",[1 1 1], "markerFaceColor",[0.4 0 1], "linewidth",0.25)
+title('r2:  ' + string(r2_3), 'fontsize', 4)
 plot2d(base_3x, y, style=color("red"))

@@ -55,9 +55,9 @@ select degree_user
         disp('Invalid degree!')
 end
 
-scatter(x, y, style=color("blue"))
+scatter(x, y, "markerEdgeColor",[1 1 1], "markerFaceColor",[0 0 1], "linewidth",0.25)
 xset("thickness", 2)
 r2 = coeff_det(y, Y)
 r2_adj = coeff_det_adj(y, Y)
-title('r2:  ' + string(r2) + '  -  ' + 'r2_adj: ' + string(r2_adj))
+title('r2:  ' + string(r2) + '  -  ' + 'r2_adj: ' + string(r2_adj), 'fontsize', 4)
 plot2d(x, Y, style=color("red"))

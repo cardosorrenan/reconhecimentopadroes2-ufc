@@ -88,5 +88,4 @@ for tests = 1:10
 end
 
 disp('Acurácia: ', mean(acc))
-
 disp('Acurácia Naive: ', mean(acc_n))
