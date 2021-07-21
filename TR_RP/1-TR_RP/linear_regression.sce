@@ -18,7 +18,8 @@ function [r_2] = coeff_det(y, y_pred)
 endfunction
 
 
-base = fscanfMat('/home/renan/Área de Trabalho/Renan/S1/RecPadroes/Trab 1/aerogerador.dat')
+PATH = 'aerogerador.dat'
+base = fscanfMat(PATH)
 n = size(base)
 
 base_1 = []

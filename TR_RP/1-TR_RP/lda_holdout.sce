@@ -2,7 +2,8 @@ clc
 clear
 
 // Ler e randomizar base de dados
-base = csvRead('/home/renan/Área de Trabalho/Renan/S1/RecPadroes/Trab 1/dermatology.data');
+PATH = 'dermatology.data'
+base = csvRead(PATH);
 base = base(grand(1, 'prm', (1:size(base)(1))), :)
 
 // Remoção das rows com Nan

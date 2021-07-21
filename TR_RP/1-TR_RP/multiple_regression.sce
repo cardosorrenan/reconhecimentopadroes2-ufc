@@ -15,7 +15,8 @@ function [r_2] = coeff_det_adj(y, y_pred)
     r_2 = 1 - (SQe/(n - p)) / (Syy/(n - 1))
 endfunction
 
-base = fscanfMat('/home/renan/Área de Trabalho/Renan/S1/RecPadroes/Trab 1/aerogerador.dat')
+PATH = 'aerogerador.dat'
+base = fscanfMat(PATH)
 x = base(:, 1)
 y = base(:, 2)
 n = size(base)(1)
